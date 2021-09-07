@@ -1,14 +1,15 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import Exbai8_login_fb from './components/Exbai8_login_fb';
+import Exbai9_turn_light from './components/Exbai9_turn_light';
+
 
 
 const App = () => {
   return(
     <SafeAreaView style = {styles.container}>
-      <StatusBar style="light" />
-      <Exbai8_login_fb></Exbai8_login_fb>
+      <StatusBar style= 'light' />
+      <Exbai9_turn_light></Exbai9_turn_light>
     </SafeAreaView>
   );
 }
@@ -16,7 +17,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#020204'
   },
 });
 
