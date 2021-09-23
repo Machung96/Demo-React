@@ -1,23 +1,25 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { KeyboardAvoidingView, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import Exbai11_traffic_light from './components/Exbai11_traffic_light';
+import Exbai13_keyboard from './components/Exbai13_keyboard';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 
 
 const App = () => {
   return(
-    <SafeAreaView style = {styles.container}>
+    <View style = {styles.container}>
       <StatusBar style= 'light' />
-      <Exbai11_traffic_light></Exbai11_traffic_light>
-    </SafeAreaView>
+      <Exbai13_keyboard></Exbai13_keyboard>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#020204'
+    flex: 1
+    // Mau background cho bai 9 va 11
+    // backgroundColor: '#020204'
   },
 });
 

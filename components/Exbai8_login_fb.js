@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import { Image, SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Image, KeyboardAvoidingView, SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import styles from '../styles/Styles_bai8';
 
 import BannerFB from '../assets/banner.png'
 
 const Exbai8_login_fb = () => {
     return(
-        <SafeAreaView style = {styles.container}>
+        <KeyboardAvoidingView 
+            style = {styles.container}
+            behavior={Platform.OS === "ios" ? "padding" : "height"}>
         {/* phan mo dau banner */}
            <View>
                 <Image 
@@ -60,7 +62,7 @@ const Exbai8_login_fb = () => {
                </TouchableOpacity>
            </View>
 
-        </SafeAreaView>
+        </KeyboardAvoidingView>
     );
 }
 
